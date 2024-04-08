@@ -14,9 +14,12 @@ if(isset($_SESSION['favorite_color'])) {
 <html>
 <head>
     <title>Your Favorite Color</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <h1><?php echo $message; ?></h1>
-    <a href="index.php">Back to choose your favorite color</a>
+    <main class="container">
+        <h1><?php echo $message; ?></h1>
+        <a href="index.php">Back to choose your favorite color</a>
+    </main>
 </body>
 </html>

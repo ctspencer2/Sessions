@@ -5,6 +5,8 @@ if(isset($_GET['color'])) {
 
     $_SESSION['favorite_color'] = $_GET['color'];
 
+    print_r($_SESSION);
+
     header('Location: color.php');
     exit;
 }
@@ -23,11 +25,13 @@ if(isset($_SESSION['favorite_color'])) {
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <h1><?php echo $message; ?></h1>
-    <ul>
-        <li><a href="index.php?color=red">Red</a></li>
-        <li><a href="index.php?color=green">Green</a></li>
-        <li><a href="index.php?color=blue">Blue</a></li>
-    </ul>
+    <main class="container">
+        <h1><?php echo $message; ?></h1>
+        <ul>
+            <li><a href="index.php?color=red">Red</a></li>
+            <li><a href="index.php?color=green">Green</a></li>
+            <li><a href="index.php?color=blue">Blue</a></li>
+        </ul>
+    </main>
 </body>
 </html>
